@@ -10,6 +10,7 @@ public class testt {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		int i = Integer.parseInt(bf.readLine());
+		bw.write((A+B)+"\n"); // 출력 
 	}
 
 }
