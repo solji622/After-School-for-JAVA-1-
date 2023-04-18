@@ -11,7 +11,7 @@ public class Test {
 		} else {
 			System.out.println(N+" 홀수");
 		}
-		
+		//ctrl + / -> 주석처리 || /**/ -> 주석 열고 닫기
 	}
 
 }
