@@ -11,7 +11,7 @@ public class Test2 {
 		System.out.print("b를 입력해주세요: ");
 		int b = sc.nextInt(); //숫자2
 		
-		System.out.println("[+, -. *, /] 중 택 1");
+		System.out.print("[+, -. *, /] 중 택 1: ");
 		String c = sc.next(); //연산자
 		
 		switch (c) {
