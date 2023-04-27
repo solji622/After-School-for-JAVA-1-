@@ -41,6 +41,7 @@ public class Test {
 				default :
 					System.out.println("메뉴 입력 오류!");
 					break;
+					// while문으로 돌아가는 게 아닌 switch문으로 돌아가게 수정해보기
 				}
 				
 			
