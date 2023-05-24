@@ -23,8 +23,10 @@ public class TEst {
 		}
 
 		int cnt = 0;
+		int strike = 0;
+		int ball = 0;
 		
-		while(true) {
+		while(strike != 3) {
 		// 숫자 3개 입력받기
 		System.out.print("숫자 입력: ");
 		int my = sc.nextInt();
@@ -40,17 +42,17 @@ public class TEst {
 			my = my / 10;
 			int one = my % 10;
 			
-			int strike = 0;
-			int ball = 0;
 			
 			// 스트라이크, 볼 판단
+			strike = 0;
 			if (num3 == three) strike++;
-      if (num2 == two) strike++;
-      if (num1 == one) strike++;
-      
-      if(one == num2 || one == num3) ball++;
-      if(two == num1 || two == num3) ball++;
-      if(three == num1 || three == num2) ball++;
+      			if (num2 == two) strike++;
+      			if (num1 == one) strike++;
+      		
+      			ball = 0;
+      			if(one == num2 || one == num3) ball++;
+      			if(two == num1 || two == num3) ball++;
+     			if(three == num1 || three == num2) ball++;
 			
 			System.out.println("스트라이크: "+strike);
 			System.out.println("볼: "+ball);
@@ -58,7 +60,6 @@ public class TEst {
 			if (strike == 3) {
 				System.out.println("----------------");
 				System.out.println(cnt + "번 만에 맞췄습니다");
-				break;
 			}
 			
 			}
