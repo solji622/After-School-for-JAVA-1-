@@ -63,9 +63,9 @@ public class TEst {
         return result;
     }
     
-    static double add4(int a, int b) {
+    static double add4(double a, double b) {
     	// a == num1, b == num2
-    	int result;
+    	double result;
         result = a/b;
         return result;
     }
