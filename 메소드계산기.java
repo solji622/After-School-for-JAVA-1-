@@ -22,7 +22,7 @@ public class TEst {
         // 계산 결과를 출력
         switch(op) {
         case 1:
-            result = add(num1, num2);
+            result = add(num1, num2); // num1, num2 == 인자
             break;
         case 2:
         	result = add2(num1, num2);
@@ -42,7 +42,7 @@ public class TEst {
     
 	
 	// 리턴값 x == void, 리턴값 o == 해당하는 자료형
-    static int add(int a, int b) {
+    static int add(int a, int b) { // int a, b == 매개변수
     	// a == num1, b == num2
     	int result;
         result = a+b;
